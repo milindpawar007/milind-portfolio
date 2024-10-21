@@ -1,0 +1,185 @@
+/* Global Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #61dafb;
+  margin-top: 5px;
+  animation: slide 1s forwards;
+}
+
+p,
+li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Navigation Styling */
+header {
+  background-color: #1a1a2e;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+nav ul li a:hover {
+  background-color: #61dafb;
+  color: #1a1a2e;
+}
+
+/* Section Styling */
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+#about-me {
+  background-color: #fff;
+}
+
+#skills,
+#projects,
+#resume,
+#contact {
+  background-color: #f8f9fa;
+}
+
+/* Skill Badges */
+ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+ul li {
+  background-color: #61dafb;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  background-color: #1a1a2e;
+}
+
+/* Projects Cards */
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  width: 300px;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  margin-bottom: 1rem;
+  color: #61dafb;
+}
+
+.project-card a {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-card a:hover {
+  color: #61dafb;
+}
+
+/* Resume Section */
+iframe {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  color: #61dafb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #1a1a2e;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a2e;
+  padding: 2rem 0;
+  color: #fff;
+}
+
+footer p,
+footer a {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes slide {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60px;
+  }
+}
